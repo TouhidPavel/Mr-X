@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: #1e30f3;
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.profile {
+    background-image: url(../assets/profile-back.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    max-height: 470px;
+    max-width: 470px;
+    height: 75vw;
+    width: 75vw;
+    background-size: 100%;
+}
+
+.profile .profile-img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    max-height: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.resume .card-body p,
+.project .card-body .card-text {
+    text-align: justify;
+}
+
+.resume .feature,
+.contact .feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+.contact form textarea {
+    min-height: 150px !important;
+    resize: none;
+}
+
+
+@media (max-width: 575px) {
+    .hero-btn {
+        justify-content: center;
+    }
+
+    .profile {
+        height: 60vw;
+        width: 60vw;
+    }
+    .profile .profile-img {
+        height: 65vw;
+    }
+
+    footer .col-auto {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .profile {
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .profile .profile-img {
+        height: 65vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile {
+        height: 50vw;
+        width: 50vw;
+    }
+
+    .profile .profile-img {
+        height: 55vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .profile {
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .profile .profile-img {
+        height: 45vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .profile {
+        height: 35vw;
+        width: 35vw;
+    }
+    
+    .profile .profile-img {
+        height: 40vw;
+    }
+}
